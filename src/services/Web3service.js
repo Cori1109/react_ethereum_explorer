@@ -7,8 +7,8 @@ class Web3service {
     return web3;
   }
 
-  getBlock = async (web3) => {
-    let block = await web3.eth.getBlock('latest');
+  getBlock = async (web3, blockNumber) => {
+    let block = await web3.eth.getBlock(blockNumber);
     return block;
   }
 
